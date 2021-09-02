@@ -1,0 +1,65 @@
+/************Tag selectors ******************/
+h1 {
+  font-family: 'Sacramento', cursive;
+}
+
+h2 {
+  font-family: 'Merriweather', serif;
+  margin-bottom:0;
+}
+
+h3 {
+  font-family: 'Merriweather', serif;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+}
+
+p {
+  margin-bottom: 0;
+  font-family: 'Merriweather', serif;
+}
+
+/******************** Class Slectors ************/
+.top {
+  background-color: #87A8A4;
+  text-align: center;
+  position: relative;
+  padding-top: 75px;
+}
+
+.bottomcloud {
+  position: absolute;
+  left: 300px;
+  bottom: 300px;
+}
+
+.topcloud {
+  position: absolute;
+  right: 300px;
+  top: 50px;
+}
+
+.profilepic {
+  border-radius: 50%;
+  height: 250px
+}
+
+.HS {
+  font-style: oblique;
+  position: relative;
+  border-top: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  left: 100px;
+}
+
+.Introp {
+  margin: auto 5% auto 5%;
+}
+.educatorpic{
+  height:250px;
+  margin-top:10px;
+}
