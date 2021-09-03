@@ -2,17 +2,19 @@
 h1 {
   font-family: 'Sacramento', cursive;
   font-size: 5rem;
-  margin-bottom: 10px;
+  font-weight: bold;
+  color:#345B63;
 }
-
 
 h2 {
   font-family: 'Merriweather', serif;
   margin-bottom:0;
+  color:#345B63;
 }
 
 h3 {
   font-family: 'Merriweather', serif;
+  color:#345B63;
 }
 
 body {
@@ -23,6 +25,17 @@ body {
 p {
   margin-bottom: 0;
   font-family: 'Merriweather', serif;
+  line-height: 2;
+}
+a {
+  font-family: 'Montserrat';
+  color: #345B63;
+  margin: 10px 20px;
+  text-decoration: none;
+
+}
+a:hover {
+  color:#EAF6F6;
 }
 
 /******************** Class Slectors ************/
@@ -47,7 +60,8 @@ p {
 
 .profilepic {
   border-radius: 50%;
-  height: 250px
+  height: 250px;
+  margin-top:20px;
 }
 
 .HS {
@@ -56,7 +70,7 @@ p {
   border-top: 0;
   margin: 0;
   margin-bottom: 20px;
-  padding-left: 225px;
+  padding-left: 15%;
 
 }
 
@@ -64,6 +78,99 @@ p {
   margin: auto 5% auto 5%;
 }
 .educatorpic{
-  height:250px;
+  height:25%;
+  margin-top: 80px;
+  margin-right: 20px;
+
+  width: 25%;
+  float:left;
+}
+.educatorpic2{
+  height:25%;
+  margin-top: 50px;
+  margin-left: 20px;
+
+  width: 25%;
+  float:right;
+}
+
+
+.educatorpic3{
+  height:25%;
+  margin-top:30px;
+
+  width: 25%;
+  float: left;
+}
+.skill-row {
+  width:50%;
+  margin:auto;
+  text-align: left;
+  line-height: 2;
+
+}
+.profile{
+  text-align: center;
+  width: 50%;
+  margin:auto;
+}
+.toptext{
+  color:#345B63;
+}
+.horz {
+  border-style: dotted;
+  border-top-width: 6px;
+  border-bottom: none;
+  width: 3%;
+  text-align: center;
+  color: #345B63;
+  clear: both;
+  margin: 50px auto;
+}
+.bottom-container {
+  background-color: #87A8A4;
+  color: #345B63;
+  padding-top: 10px;
   margin-top:10px;
+}
+.copywrite{
+  font-size: 1rem;
+  color:white;
+}
+
+
+.BUTTON_NYU {
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   color: #FFFFFF;
+   font-family: 'Montserrat';
+   font-size: 21px;
+   font-weight: 100;
+   padding: 16px;
+   background-color: #3D94F6;
+   -webkit-box-shadow: 1px 1px 20px 0 #000000;
+   -moz-box-shadow: 1px 1px 20px 0 #000000;
+   box-shadow: 1px 1px 20px 0 #000000;
+   text-shadow: 1px 1px 20px #000000;
+   border: solid #337FED 1px;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+
+}
+
+.BUTTON_NYU:hover {
+   border: solid #337FED 1px;
+   background: #1E62D0;
+   background-image: -webkit-linear-gradient(top, #1E62D0, #3D94F6);
+   background-image: -moz-linear-gradient(top, #1E62D0, #3D94F6);
+   background-image: -ms-linear-gradient(top, #1E62D0, #3D94F6);
+   background-image: -o-linear-gradient(top, #1E62D0, #3D94F6);
+   background-image: -webkit-gradient(to bottom, #1E62D0, #3D94F6);
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   text-decoration: none;
 }
