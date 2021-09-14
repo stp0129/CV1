@@ -4,80 +4,182 @@
 <head>
   <meta charset="utf-8">
   <title>Sean Phillips</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  <!-- My CSS -->
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" href="stpfav.ico">
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
+  <!-- Top Section with mountain and clouds -->
   <div class="top">
-    <img class="topcloud" src="images/cloud.png" alt="cloud piture"></img>
-    <div class="toptext">
-      <h1>Hi! I'm Sean</h1>
-      <p>your next Mobile Device/AV Management Profesional</p>
-    </div>
-    <img class="bottomcloud" src="images/cloud.png" alt="cloud picture"></img>
-    <img class="mountain" src="images/mountain.png" alt="mountain picture"></img>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark nbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img class="logo" src="images/STPweb.png"></img> STPweb</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Downloads
+          </a>
+              <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-md-end" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="files/Phone Life Cycle.docx">Phone Life Cycle</a></li>
+                <li><a class="dropdown-item" href="files/GoogleAccountCreationCheatSheet.docx">Google Account Cheat Sheet</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="files/PositionPurpose.docx">Rationale for 90-Day Plan</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="90dayplan.html">90 Day Plan</a>
+            </li>
 
+
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    <!-- Clouds and mountain -->
+    <div id=top-pictures>
+<div class="row">
+  <div col="col">
+      <img class="topcloud" src="images/cloud.png" alt="cloud piture"></img>
+      </div>
+      </div>
+      <div class="toptext">
+        <h1>Hi! I'm Sean</h1>
+        <p>your next Mobile Device/AV Management Profesional</p>
+      </div>
+      <img class="bottomcloud" src="images/cloud.png" alt="cloud picture"></img>
+      <img class="mountain" src="images/mountain.png" alt="mountain picture"></img>
+    </div>
   </div>
+  <!-- Profile Pic and Intro Section -->
   <div class="middle-container">
-    <div class="profile">
+    <div class="profile" id="intro">
       <img class="profilepic" src="images/selfphoto.jpg" alt="profilepicture">
       <h2>Who am I?</h2>
       <p class="Introp">I am an avid learner, educator, and technology enthusiast. I am applying to be part of your mission to protect, conserve and improve our environment and enhance our quality of life.
-         Pollution is an individual, global, and equity issue. I would be ecstatic to be part of this mission.</p>
+        Pollution is an individual, global, and equity issue. I would be ecstatic to be part of this mission.</p>
     </div>
+
     <hr class="horz">
-    <div class="skills">
+    </hr>
+
+
+    <!-- carousel -->
+    <div class="skills" id="my-skills">
       <h2>My Skills.</h2>
-      <div class="skill-row">
-        <img class="" src="" alt="">
-        <img class="educatorpic" src="https://cdn-icons-png.flaticon.com/512/752/752646.png" alt="technology picture">
+      <div id="skills-carousel" class="carousel slide carosli" data-bs-ride="carousel" data-bs-interval="4000" data-bs-pause="hover">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
 
-        <h3>Technical Proficiency</h3>
-        <p>I bring a technical skillset that includes hardware, software, and mechanical proficiency. These areas include common office software suites, and operating systems both mobile and desktop.
-           Additionally, I’m learning to code. I built the website we’re on right now</p>
-      </div>
-      <div class="skill-row">
-        <img class="educatorpic2" src="https://cdn-icons-png.flaticon.com/512/2000/2000920.png" alt="computer eduction picture">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
 
-        <h3>High Quality Educator</h3>
-        <p>Technology education has been part of my professional life for over 15 years. I have taught computer and mobile concepts to all skill levels.
-        Additionally, pursuing my education degree has provided me with a repertoire of skills empowering me to teach others to fully comprehend a new subject.</p>
-      </div>
-      <div class="skill-row">
+            <div class="skill-row">
 
-        <img class="educatorpic3" src="https://cdn-icons-png.flaticon.com/512/1067/1067617.png" alt="customer serivice picture"></img>
-        <h3>Customer Service Experience</h3>
-        <p>High quality customer service is the byproduct of patience, communication, and a knowledge base sufficient to solve the issue. I have been solving problems with phones, tablets, Google
-           and Apple accounts, hotspots, networks, VOIP systems, and AV setups for over 15 years.</p>
+              <img class="educatorpic" src="https://cdn-icons-png.flaticon.com/512/752/752646.png" alt="technology picture">
+
+              <h3>Technical Proficiency</h3>
+              <p>I bring a technical skillset that includes hardware, software, and mechanical proficiency. These areas include common office software suites, and operating systems both mobile and desktop.
+                Additionally, I’m learning to code. I built the website we’re on right now</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="skill-row">
+              <img class="educatorpic2" src="https://cdn-icons-png.flaticon.com/512/2000/2000920.png" alt="computer eduction picture">
+
+              <h3>High Quality Educator</h3>
+              <p>Technology education has been part of my professional life for over 15 years. I have taught computer and mobile concepts to all skill levels.
+                Additionally, pursuing my education degree has provided me with a repertoire of skills empowering me to teach others to fully comprehend a new subject.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="skill-row">
+
+              <img class="educatorpic3" src="https://cdn-icons-png.flaticon.com/512/1067/1067617.png" alt="customer serivice picture"></img>
+              <h3>Customer Service Experience</h3>
+              <p>High quality customer service is the byproduct of patience, communication, and a knowledge base sufficient to solve the issue. I have been solving problems with phones, tablets, Google
+                and Apple accounts, hotspots, networks, VOIP systems, and AV setups for over 15 years.</p>
+            </div>
+
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#skills-carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#skills-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
+
+
 
 
     </div>
 
-        <div class="contact-me">
-  <hr class="horz"></hr>
+    <!-- 90 Day plan Card -->
+    <hr class="horz">
+    </hr>
+    <div class="row">
+    <div class="col plan-card">
+    <div class="card">
+      <img src="images/306090calander.png" class="card-img-top" alt="calander picture">
+      <div class="card-body">
+        <h5 class="card-title">90 Day Plan</h5>
+        <p class="card-text">Check out my plan for my first 90 days. This plan will ensure integration into current systems while making an immediate positve impact.</p>
+        <a href="90dayplan.html" class="btn btn-primary">Check it out</a>
+      </div>
+    </div>
+    </div>
+    </div>
 
-      <h2>Have other questions?</h2>
-      <h3>Feel free to reach out to me</h3>
-      <p>The great aim of education is not knowledge but action.</p>
+
+
+
+    <!-- Contact me Section -->
+    <div class="contact-me" id="contact">
+      <hr class="horz">
+      </hr>
+
+      <h3>Have other questions?</h3>
+      <h5 class="contact-me-headers">Feel free to reach out to me</h5>
+      <p>"The great aim of education is not knowledge but action."</p>
       <p class="HS">-Herbert Spencer</p>
 
 
     </div>
   </div>
+  <!-- Contact me button -->
+  <button type="button" class="btn btn-outline-success">Contact Me</button>
+  <!-- bottom bar -->
 
-  <a href="mailto:stp0129@hotmail.com" class="BUTTON_NYU">Contact Me</a>
-
-  <div class="bottom-container">
-    <a  class="footer-link" href="files/Resume_RS.docx">Resume</a>
+  <div class="bottom-container" id="footer">
+    <a class="footer-link" href="files/Resume_RS.docx">Resume</a>
     <!-- Don't have other websites to link at this time -->
-        <a class="footer-link" href="index.html">Back to Top</a>
-      <!--  <a class="footer-link" href="">PowerPoint</a>  -->
+    <a class="footer-link" href="index.html">Back to Top</a>
+    <!--  <a class="footer-link" href="">PowerPoint</a>  -->
 
     <p class="copywrite">© 2021 Sean Phillips.</p>
 
